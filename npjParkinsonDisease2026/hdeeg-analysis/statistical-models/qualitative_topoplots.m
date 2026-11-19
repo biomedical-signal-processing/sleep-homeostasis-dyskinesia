@@ -4,9 +4,9 @@
 %  - Theta band analyzed: 4–8 Hz
 %  - Output: log10 power topoplots and difference maps (evening - morning)
 %  - Results are saved in the "report" subfolder
-% Author: [Giovanni Lombardi]
-% Institution: [Institute of Clinical Neuroscience of Southern Switzerland]
-% Date: December[2025]
+% Author: Giovanni Lombardi
+% Institution: Institute of Clinical Neuroscience of Southern Switzerland
+% Date: December 2025
 %  ========================================================================
 
 clear; clc;

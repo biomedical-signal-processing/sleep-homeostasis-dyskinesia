@@ -42,9 +42,9 @@
 %   - Fig5_Correlations_2x4.png
 %   - Additional regression plots (.png)
 %
-% Author: [Giovanni Lombardi]
-% Institution: [Institute of Clinical Neuroscience of Southern Switzerland]
-% Date: December[2025]
+% Author: Giovanni Lombardi
+% Institution: Institute of Clinical Neuroscience of Southern Switzerland
+% Date: December 2025
 %% ========================================================================
 
 clearvars -except psdIndividual freqs

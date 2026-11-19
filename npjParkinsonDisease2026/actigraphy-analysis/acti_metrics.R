@@ -12,11 +12,11 @@ library(readxl)
 library(dplyr)
  
 #  Define data and output paths
-datadir <- "C:/Users/Galati/Desktop/prova/file"       # Path to raw accelerometer data
-outputdir <- "C:/Users/Galati/Desktop/prova/out65"    # Path to store GGIR output
- 
+datadir <- ".../raw_accelerometer"     # Path to raw accelerometer data
+outputdir <- ".../ggir_output"         # Path to store GGIR output
+
 #  Path to the sleep log in CSV format
-sleeplog_csv <- "C:/Users/Galati/Desktop/prova/Sleep_log_7d/check_clean.csv"
+sleeplog_csv <- ".../sleep_log.csv"
  
 #  Read the sleep log
 sleeplog_df <- read.csv(sleeplog_csv, stringsAsFactors = FALSE)

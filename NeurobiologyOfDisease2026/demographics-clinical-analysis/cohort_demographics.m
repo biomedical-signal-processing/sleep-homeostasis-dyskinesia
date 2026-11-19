@@ -41,8 +41,8 @@
 clear; clc; close all;
 
 %% ---------------- PATHS (EDIT) ----------------
-db_path    = 'C:\Users\EOC\OneDrive\script matlab\Annals_entropy\database\db_annals_theta_CLEAN.xlsx';
-swtest_dir = 'C:\Users\EOC\OneDrive\script matlab\appoggio\swtest';
+db_path    = '...\db_annals_theta_CLEAN.xlsx';   % clinical/demographic database
+swtest_dir = '...\swtest';                        % folder containing swtest.m
 addpath(swtest_dir);
 
 out_xlsx = fullfile(fileparts(db_path), 'Table1_Recap.xlsx');
@@ -193,7 +193,7 @@ for i = 1:nV
     col_ADV(i) = sprintf('%.2f ± %.2f', mu_ADV, sd_ADV);
     col_DYS(i) = sprintf('%.2f ± %.2f', mu_DYS, sd_DYS);
 
-    % Shapiro per gruppo (swtest)
+    % Shapiro–Wilk per group (swtest)
     pSW_CTL = NaN; pSW_ADV = NaN; pSW_DYS = NaN;
     try
         if use_CTL && numel(y_CTL) >= 3, [~, pSW_CTL] = swtest(y_CTL); end

@@ -23,9 +23,9 @@
 % - `psdIndividual.mat` containing theta power data per subject
 % - `clinical_data.xlsx` with subject ID, age, and sex
 % - `ANT_64.ced` for electrode position coordinates
-% Author: [Giovanni Lombardi]
-% Institution: [Institute of Clinical Neuroscience of Southern Switzerland]
-% Date: December[2025]
+% Author: Giovanni Lombardi
+% Institution: Institute of Clinical Neuroscience of Southern Switzerland
+% Date: December 2025
 % =========================================================================
 
 load('...\psdIndividual.mat');  % structure psdIndividual

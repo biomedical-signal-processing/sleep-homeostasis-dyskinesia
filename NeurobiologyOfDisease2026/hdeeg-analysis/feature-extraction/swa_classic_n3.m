@@ -1,19 +1,19 @@
 %% ========================================================================
-%  SWA CLASSIC in N3 per 10 segmenti definiti su NREM (N1+N2+N3)
+%  CLASSIC SWA in N3 across 10 segments defined on NREM sleep (N1+N2+N3)
 %
-%  IDEA:
-%   1) Segmentazione fatta sulla sequenza delle epoche NREM valide
-%   2) Per ogni segmento prendo solo le epoche N3
-%   3) Concateno i campioni N3
-%   4) Calcolo la power spettrale con pwelch
-%   5) Estraggo la potenza nella banda SWA
+%  APPROACH:
+%   1) Split the sequence of valid NREM epochs into 10 segments
+%   2) Within each segment, keep only the N3 epochs
+%   3) Concatenate the N3 samples
+%   4) Estimate the power spectrum with pwelch
+%   5) Extract power in the SWA band
 %
-%  METRICA:
-%   - SWAclassic_N3 = potenza media nella banda 0.5–4 Hz
+%  METRIC:
+%   - SWAclassic_N3 = mean power in the 0.5–4 Hz band
 %
-%  NOTE:
-%   
-%  - Early e Late definiti sui segmenti NREM
+%  NOTES:
+%   - Early and Late windows are defined on the NREM segments
+%   - Groups: CTL = controls, ADV = PDdys-, DYS = PDdys+
 %
 %  REQUIREMENTS:
 %   - EEGLAB
@@ -22,10 +22,10 @@
 clear; clc;
 
 %% ===================== USER SETTINGS ====================================
-in_root   = 'G:\EOC\Discinesia\LID-PD-SLEEP\Data\Annals_processed';
+in_root   = '...\_processed';
 score_dir = fullfile(in_root, 'infoscoringpersubject');
-out_root  = fullfile(in_root, 'for_reviewers', 'SWAclassic_pwelch');
-groups    = {'CTL','DNV','ADV','DYS'};
+out_root  = fullfile(in_root, 'SWAclassic_pwelch');
+groups    = {'CTL','ADV','DYS'};
 
 n_segments         = 10;
 early_segments_idx = [2 3 4 5]; % 2345

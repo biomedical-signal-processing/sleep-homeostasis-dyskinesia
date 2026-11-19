@@ -21,7 +21,9 @@ The MATLAB scripts are organized by analysis stage:
 - **[hdeeg-analysis/statistical-models](hdeeg-analysis/statistical-models/)** — `swa_early_vs_late.m` and `sampen_early_vs_late.m` test within-group overnight changes; `roi_between_groups.m` compares regions across groups.
 - **[correlation-analysis](correlation-analysis/)** — `swa_sampen_clinical_correlations.m` relates overnight EEG changes to clinical scores.
 
-Run scripts after setting their input and output paths and installing the dependencies noted in each script. The datasets are not included in this repository.
+**Group labels:** the scripts use the internal labels `CTL`, `ADV`, and `DYS`, which correspond to the paper's CTL, PDdys- (advanced PD without dyskinesia), and PDdys+ (advanced PD with dyskinesia), respectively.
+
+Run scripts after setting their input and output paths (shown as `...` placeholders) and installing the dependencies noted in each script. The datasets are not included in this repository.
 
 The repository includes scripts for the main SWA and SampEn analyses, but the Python/EntropyHub step that computes per-epoch SampEn and the generator of `globalRes_SWA_CLAMP.mat` are not included. The statistical scripts require these external intermediate outputs. The available group comparison script analyzes raw Early/Late values; it does not implement every normalized-change analysis described in the paper.
 

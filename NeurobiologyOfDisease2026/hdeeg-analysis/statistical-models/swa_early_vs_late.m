@@ -18,7 +18,7 @@
 %       6) CSV summaries and figures are exported
 %
 % INPUT:
-%   - ...\for_reviewers\SWA_CLAMP\globalRes_SWA_CLAMP.mat
+%   - ...\SWA_CLAMP\globalRes_SWA_CLAMP.mat
 %
 % OUTPUT:
 %   - One CSV per group × metric
@@ -34,7 +34,7 @@ clear; clc; close all; rng(42);
 
 %% ====================== USER SETTINGS ===================================
 % Input
-ROOT_SWA = '...\for_reviewers\SWA_CLAMP';
+ROOT_SWA = '...\SWA_CLAMP';
 IN_MAT   = fullfile(ROOT_SWA, 'globalRes_SWA_CLAMP.mat');
 
 % Output

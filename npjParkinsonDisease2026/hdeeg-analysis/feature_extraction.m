@@ -14,9 +14,9 @@
 % Requirements:
 % - EEGLAB installed and initialized
 % - Input `.set` files stored in per-group folders
-% Author: [Giovanni Lombardi]
-% Institution: [Institute of Clinical Neuroscience of Southern Switzerland]
-% Date: December[2025]
+% Author: Giovanni Lombardi
+% Institution: Institute of Clinical Neuroscience of Southern Switzerland
+% Date: December 2025
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Initial configuration

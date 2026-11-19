@@ -26,9 +26,9 @@
 % - Proper organization of input folders per subject and group
 % - Manual inspection via GUI is required in steps 6, 7, and 8
 %
-% Author: [Giovanni Lombardi]
-% Institution: [Institute of Clinical Neuroscience of Southern Switzerland]
-% Date: December[2025]
+% Author: Giovanni Lombardi
+% Institution: Institute of Clinical Neuroscience of Southern Switzerland
+% Date: December 2025
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear; clc; close all;

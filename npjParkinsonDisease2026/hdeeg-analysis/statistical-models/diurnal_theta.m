@@ -29,9 +29,9 @@
 % - PSD file structured by subject/group/session
 % - Excel file with subject IDs and clinical variables
 %
-% Author: [Giovanni Lombardi]
-% Institution: [Institute of Clinical Neuroscience of Southern Switzerland]
-% Date: December[2025]
+% Author: Giovanni Lombardi
+% Institution: Institute of Clinical Neuroscience of Southern Switzerland
+% Date: December 2025
 %
 % Statistical significance of the Group × Session interaction effect 
 % was assessed using a non-parametric permutation test with 
